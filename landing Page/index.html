@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>App-Landing-Page</title>
+
+    <link rel="icon" href="assets/images/logo/iapp.jpg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/themify-icons.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+  
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+  
+      .swiper {
+        width: 80%;
+        height: 60%;
+      }
+  
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        /* object-fit: cover; */
+      }
+    </style>
+  </head>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#navbarText"
+    data-bs-offset="0"
+    class="navbar-nav"
+    tabindex="0"
+  >
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./assets/images/logo/oneshot-white.png"
+              class="img-fluid navbar-brand-regular"
+            />
+            <img
+              src="./assets/images/logo/oneshot-pink.png"
+              class="img-fluid navbar-brand-sticky"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="ti-align-justify navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link scroll active"
+                  aria-current="page"
+                  href="#home"
+                >
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link scroll" href="#feature">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link scroll" href="#app-screenshots">
+                  Screenshots
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link scroll" href="#pricing">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link scroll" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section id="home">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="home_text">
+              <h2 class="">
+                Present Your app with
+                <span class="text-uppercase">Oneshot</span>
+              </h2>
+              <p class="">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam
+                architecto dolore nihil at minus asperiores velit recusandae
+                cumque, dolorum, laudantium, harum ex. Amet, ut? Itaque quaerat
+                alias blanditiis, modi consequuntur ipsam labore repellendus
+                numquam? Deleniti.
+              </p>
+              <div class="home-download-btn">
+                <a href="#" class="btn btn-bordered mt-4 mx-3">
+                  <span class="ti-control-play"></span>
+                  Play Store
+                </a>
+                <a href="#" class="btn btn-bordered mt-4 mx-3">
+                  <span class="ti-apple"></span>
+                  App Store
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-6">
+            <div class="home-image">
+              <img src="./assets/images/m.png" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section counter_area">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-6 col-sm-3 single_counter text-center">
+            <div class="counter_inner p-3 p-md-0">
+              <div class="counter_item d-inline-block mb-3">
+                  <span id="count1" class="counter fw-bold">10</span>
+                  <span  class="fw-bold">M</span>
+              </div>
+              <h5>Users</h5>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-3 single_counter text-center">
+            <div class="counter_inner p-3 p-md-0">
+              <div class="counter_item d-inline-block mb-3">
+                  <span id="count2" class="counter fw-bold">5</span>
+                  <span  class="fw-bold">K</span>
+              </div>
+              <h5>Developers</h5>
+            </div>
+          </div>
+
+
+          <div class="col-6 col-sm-3 single_counter text-center">
+            <div class="counter_inner p-3 p-md-0">
+              <div class="counter_item d-inline-block mb-3">
+                  <span id="count3" class="counter fw-bold">23</span>
+                  <span  class="fw-bold">M</span>
+              </div>
+              <h5>Downloads</h5>
+            </div>
+          </div>
+
+
+          <div class="col-6 col-sm-3 single_counter text-center">
+            <div class="counter_inner p-3 p-md-0">
+              <div class="counter_item d-inline-block mb-3">
+                  <span id="count4" class="counter fw-bold">25</span>
+                  <span  class="fw-bold">M</span>
+              </div>
+              <h5>Customers</h5>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="promo_section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-7 col-md-8">
+             <div class="section_heading text-center">
+              <h2>Why do every people<br><span>Love App-mobile?</span></h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Consequatur omnis asperiores doloribus nobis.
+              </p>
+             </div>
+          </div>
+        </div>
+
+        <div class="row mobile-px-20  mt-5">
+
+          <div class="com-md-6 col-lg-4">
+            <div class="single_promo_hover single_promo_1 text-center">
+              <div class="circle-icon">
+                <span class="fa-regular fa-circle-check text-white"></span>
+              </div>
+              <h5>Clean Design</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, ipsa in? Nulla. Lorem, ipsum dolor.</p>
+            </div>
+          </div>
+
+          
+          <div class="com-md-6 col-lg-4">
+            <div class="single_promo_hover single_promo_1 text-center">
+              <div class="circle-icon">
+                <span class="fa-regular fa-clock-four text-white"></span>
+              </div>
+              <h5>Secure Data</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, ipsa in? Nulla. Lorem, ipsum dolor.</p>
+            </div>
+          </div>
+
+
+          <div class="com-md-6 col-lg-4">
+            <div class="single_promo_hover single_promo_1 text-center">
+              <div class="circle-icon">
+                <span class="fa-solid fa-font-awesome text-white"></span>
+              </div>
+              <h5>Ratina Ready</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, ipsa in? Nulla. Lorem, ipsum dolor.</p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <section id="feature">
+      <div class="title">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-5 offset-md-1">
+
+              <div class="features_middle">
+                <h2>Our special features</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore placeat ratione aspernatur culpa deleniti!</p>
+              </div>
+
+            </div>
+
+            <div class="col-md-5">
+              <div class="features_img">
+                <img src="/assets/images/service-1.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid margin_top_up ipad_px_30">
+        <div class="row">
+          <div class="col-sm-12 col-lg-10 offset-lg-1">
+            <div class="row">
+
+              <div class="col-sm-6 col-lg-4">
+                <div class="single_feature">
+                  <h4>Beautiful Design</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua</p>
+                  <div class="feature_icon">
+                  <svg class="svg-inline--fa fa-air-freshener fa-w-12" fill="#000000" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Text-files"> <path d="M53.9791489,9.1429005H50.010849c-0.0826988,0-0.1562004,0.0283995-0.2331009,0.0469999V5.0228 C49.7777481,2.253,47.4731483,0,44.6398468,0h-34.422596C7.3839517,0,5.0793519,2.253,5.0793519,5.0228v46.8432999 c0,2.7697983,2.3045998,5.0228004,5.1378999,5.0228004h6.0367002v2.2678986C16.253952,61.8274002,18.4702511,64,21.1954517,64 h32.783699c2.7252007,0,4.9414978-2.1725998,4.9414978-4.8432007V13.9861002 C58.9206467,11.3155003,56.7043495,9.1429005,53.9791489,9.1429005z M7.1110516,51.8661003V5.0228 c0-1.6487999,1.3938999-2.9909999,3.1062002-2.9909999h34.422596c1.7123032,0,3.1062012,1.3422,3.1062012,2.9909999v46.8432999 c0,1.6487999-1.393898,2.9911003-3.1062012,2.9911003h-34.422596C8.5049515,54.8572006,7.1110516,53.5149002,7.1110516,51.8661003z M56.8888474,59.1567993c0,1.550602-1.3055,2.8115005-2.9096985,2.8115005h-32.783699 c-1.6042004,0-2.9097996-1.2608986-2.9097996-2.8115005v-2.2678986h26.3541946 c2.8333015,0,5.1379013-2.2530022,5.1379013-5.0228004V11.1275997c0.0769005,0.0186005,0.1504021,0.0469999,0.2331009,0.0469999 h3.9682999c1.6041985,0,2.9096985,1.2609005,2.9096985,2.8115005V59.1567993z"></path> <path d="M38.6031494,13.2063999H16.253952c-0.5615005,0-1.0159006,0.4542999-1.0159006,1.0158005 c0,0.5615997,0.4544001,1.0158997,1.0159006,1.0158997h22.3491974c0.5615005,0,1.0158997-0.4542999,1.0158997-1.0158997 C39.6190491,13.6606998,39.16465,13.2063999,38.6031494,13.2063999z"></path> <path d="M38.6031494,21.3334007H16.253952c-0.5615005,0-1.0159006,0.4542999-1.0159006,1.0157986 c0,0.5615005,0.4544001,1.0159016,1.0159006,1.0159016h22.3491974c0.5615005,0,1.0158997-0.454401,1.0158997-1.0159016 C39.6190491,21.7877007,39.16465,21.3334007,38.6031494,21.3334007z"></path> <path d="M38.6031494,29.4603004H16.253952c-0.5615005,0-1.0159006,0.4543991-1.0159006,1.0158997 s0.4544001,1.0158997,1.0159006,1.0158997h22.3491974c0.5615005,0,1.0158997-0.4543991,1.0158997-1.0158997 S39.16465,29.4603004,38.6031494,29.4603004z"></path> <path d="M28.4444485,37.5872993H16.253952c-0.5615005,0-1.0159006,0.4543991-1.0159006,1.0158997 s0.4544001,1.0158997,1.0159006,1.0158997h12.1904964c0.5615025,0,1.0158005-0.4543991,1.0158005-1.0158997 S29.0059509,37.5872993,28.4444485,37.5872993z"></path> </g> </g></svg>
+                  </div>
+                  </div>
+                  </div>
+
+                  <div class="col-sm-6 col-lg-4">
+                    <div class="single_feature">
+                    <h4>Pure and Simple</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua</p> 
+                    <div class="feature_icon">
+                      <svg class="svg-inline--fa fa-anchor fa-w-18" fill="#000000" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Printer"> <path d="M57.7881012,14.03125H52.5v-8.0625c0-2.2091999-1.7909012-4-4-4h-33c-2.2091999,0-4,1.7908001-4,4v8.0625H6.2119002 C2.7871001,14.03125,0,16.8183498,0,20.2431507V46.513649c0,3.4248009,2.7871001,6.2119026,6.2119002,6.2119026h2.3798995 c0.5527,0,1-0.4472008,1-1c0-0.5527-0.4473-1-1-1H6.2119002C3.8896,50.7255516,2,48.8359489,2,46.513649V20.2431507 c0-2.3223,1.8896-4.2119007,4.2119002-4.2119007h51.5762024C60.1102982,16.03125,62,17.9208508,62,20.2431507V46.513649 c0,2.3223-1.8897018,4.2119026-4.2118988,4.2119026H56c-0.5527992,0-1,0.4473-1,1c0,0.5527992,0.4472008,1,1,1h1.7881012 C61.2128983,52.7255516,64,49.9384499,64,46.513649V20.2431507C64,16.8183498,61.2128983,14.03125,57.7881012,14.03125z M13.5,5.96875c0-1.1027999,0.8971996-2,2-2h33c1.1027985,0,2,0.8972001,2,2v8h-37V5.96875z"></path> <path d="M44,45.0322495H20c-0.5517998,0-0.9990005,0.4472008-0.9990005,0.9990005S19.4482002,47.0302505,20,47.0302505h24 c0.5517006,0,0.9990005-0.4472008,0.9990005-0.9990005S44.5517006,45.0322495,44,45.0322495z"></path> <path d="M44,52.0322495H20c-0.5517998,0-0.9990005,0.4472008-0.9990005,0.9990005S19.4482002,54.0302505,20,54.0302505h24 c0.5517006,0,0.9990005-0.4472008,0.9990005-0.9990005S44.5517006,52.0322495,44,52.0322495z"></path> <circle cx="7.9590998" cy="21.8405495" r="2"></circle> <circle cx="14.2856998" cy="21.8405495" r="2"></circle> <circle cx="20.6121998" cy="21.8405495" r="2"></circle> <path d="M11,62.03125h42v-26H11V62.03125z M13.4036999,38.4349518h37.1925964v21.1925964H13.4036999V38.4349518z"></path> </g> </g></svg>
+                    </div>
+                    </div>
+                    </div>
+
+
+                  <div class="col-sm-6 col-lg-5">
+                    <div class="single_feature">
+                    <h4>Color Scheme</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua</p> 
+                    <div class="feature_icon">
+                      <svg  class="svg-inline--fa fa-anchor fa-w-18" fill="#000000" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Certificate-file"> <path d="M54.1076508,14.717124c-0.0053024-0.0955-0.0237999-0.1876001-0.0559006-0.2779007 c-0.0102005-0.0284996-0.0171013-0.0567999-0.0298004-0.0840998c-0.0480995-0.1046-0.1090012-0.2038994-0.1932983-0.2884998 c0,0-3.4248009-3.4394999-6.8535004-6.8759999c-1.7139015-1.7188001-3.4297028-3.4356-4.7187996-4.7227001 c-0.9531021-0.9511001-1.5810013-1.5781001-2.0234032-1.9677001c-0.006897-0.0098-0.0136986-0.0186-0.0205002-0.0284 c-0.0009995-0.0019-0.0019989-0.0029-0.0029984-0.0048l-0.0078011,0.0058c-0.6213989-0.5415-0.8670006-0.6004-1.1478996-0.4306 l-26.0746994,0.0009c-1.7079992,0-3.0977001,1.3907001-3.0977001,3.0996001v50.5655022 c0,0.8661995,0.3369007,1.6805992,0.9522009,2.2967987c0.6053991,0.6026001,1.4413996,0.9482994,2.2928991,0.9482994h13.1513996 c0.5527,0,1-0.4473,1-1c0-0.5527992-0.4473-1-1-1H13.1264496c-0.3270998,0-0.6483994-0.1338005-0.8799-0.3633003 c-0.2323999-0.232399-0.3652-0.5536995-0.3652-0.8817978V3.1427238c0-0.6064,0.4922009-1.0996001,1.0977001-1.0996001 l25.4626007-0.0009c0.0377007,2.2823002-0.0049019,8.6077995-0.0485992,12.7186995 c-0.002903,0.2676001,0.1016006,0.5244007,0.2891006,0.7139006c0.1875,0.1904001,0.4442978,0.2967997,0.7108994,0.2967997 h12.7255974v38.0997009c0,0.2851028-0.1152,0.5634003-0.3173981,0.7656021 c-0.2041016,0.2040977-0.4756012,0.3163986-0.7645988,0.3163986h-0.455101c-0.5527,0-1,0.4472008-1,1c0,0.5527,0.4473,1,1,1 h0.455101c0.8241997,0,1.5985985-0.3213005,2.1796989-0.9033012c0.5732002-0.5732994,0.902298-1.3671989,0.902298-2.1786995 V14.7716236C54.1186485,14.7523241,54.1087494,14.7362242,54.1076508,14.717124z M40.4038506,13.7716236 C40.45755,8.5080242,40.4741516,5.380024,40.4585495,3.4992237c2.3398018,2.3340001,6.6297989,6.6346998,10.2538986,10.2723999 H40.4038506z"></path> <path d="M46.4301491,49.4289246c-0.0370979-0.1273003-0.0993004-0.2401009-0.1764984-0.3384018 c1.4456978-1.7341003,2.3171997-3.9636993,2.3171997-6.3979988c0-5.5228004-4.4771996-10-10-10c-5.5228996,0-10,4.4771996-10,10 c0,2.5708008,0.9783993,4.9075012,2.5725002,6.6790009L27.7680492,60.942524 c-0.1103001,0.3779984,0.0117016,0.7862015,0.3116016,1.0419998c0.299799,0.2549019,0.7206993,0.3086014,1.0770988,0.1416016 l3.4014015-1.6162033l2.1376991,3.0996017c0.1884003,0.2734985,0.4980011,0.4326973,0.8232002,0.4326973 c0.0565987,0,0.1133003-0.0048981,0.169899-0.0146942c0.3848-0.0664024,0.6953011-0.3496017,0.7959023-0.7266045 l2.2945976-8.5613976l2.2943001,8.5613976c0.1006012,0.3760033,0.410202,0.6592026,0.7938995,0.7266045 c0.0577011,0.0097961,0.1152992,0.0146942,0.1719017,0.0146942c0.3241997,0,0.6319008-0.157299,0.8213005-0.4296989 l2.1436005-3.0839996l3.3993988,1.5996017c0.3554001,0.1660004,0.7753983,0.1102982,1.0760994-0.1455002 c0.2989006-0.2549019,0.4199982-0.6621017,0.3096008-1.0401001L46.4301491,49.4289246z M38.5708504,34.5973244 c4.4636993,0,8.0951996,3.6315002,8.0951996,8.0951996c0,4.4637985-3.6315002,8.0952988-8.0951996,8.0952988 c-4.4637985,0-8.0953007-3.6315002-8.0953007-8.0952988C30.4755497,38.2288246,34.1070518,34.5973244,38.5708504,34.5973244z M35.1137505,60.692524l-1.3925018-2.0185013c-0.2792969-0.4043007-0.809597-0.5478973-1.2519989-0.3359985l-2.1571999,1.024498 l2.4841995-8.5150986c1.3003006,0.9225998,2.8286018,1.5391998,4.4862022,1.7528992L35.1137505,60.692524z M45.0913506,58.3586235 c-0.4424019-0.2080994-0.9687996-0.0654984-1.2471008,0.3348999l-1.3964996,2.0088005l-2.1875992-8.1632004 c1.6489983-0.2812004,3.1576996-0.9631996,4.4260979-1.9464989l2.5623016,8.781601L45.0913506,58.3586235z"></path> <path d="M38.5708504,47.692524c2.7613983,0,5-2.2384987,5-5c0-2.7613983-2.2386017-5-5-5c-2.7614021,0-5,2.2386017-5,5 C33.5708504,45.4540253,35.8094482,47.692524,38.5708504,47.692524z M38.5708504,39.692524c1.6542015,0,3,1.3457985,3,3 c0,1.6543007-1.3457985,3-3,3c-1.6543007,0-3-1.3456993-3-3C35.5708504,41.0383224,36.9165497,39.692524,38.5708504,39.692524z"></path> </g> </g></svg>
+                    </div>
+                    </div>
+                    </div>
+
+
+                  <div class="col-sm-6 col-lg-5">
+                    <div class="single_feature">
+                    <h4>Wow Animations</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua</p> 
+                    <div class="feature_icon">
+                      <svg class="svg-inline--fa fa-anchor fa-w-18" fill="#000000" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Exit_1_"> <path d="M52.4501991,28.7678509l-5-4.9990005c-0.3768997-0.3770008-0.9902-0.3770008-1.3671989,0 c-0.3778992,0.3778992-0.3778992,0.9902,0,1.3671989l3.3171997,3.3164005H35.2666016v2h14.1320992l-3.3157005,3.3163986 c-0.3778992,0.377903-0.3778992,0.9902,0,1.3672028c0.1884995,0.1884995,0.4365997,0.2831993,0.6835976,0.2831993 c0.2471008,0,0.4951019-0.0946999,0.6836014-0.2831993l5-5.0010014c0.1817017-0.1816006,0.2831993-0.4277,0.2831993-0.6835995 C52.7333984,29.1946507,52.6319008,28.9495506,52.4501991,28.7678509z"></path> <path d="M40.2666016,39.4524498c-0.5527,0-1,0.4473-1,1v10.7900009c0,1.0429993-0.8310013,2.2099991-1.9433022,2.2099991 h-6.0566998V11.2394505V9.8677502L30.0191994,9.33395L14.0765009,2.56445l-0.2606955-0.112h23.507494 c1.2168007,0,1.9433022,0.9921999,1.9433022,1.9511998v15.0487995c0,0.5527,0.4473,1,1,1c0.5527992,0,1-0.4473,1-1V4.4036498 c0-2.1786997-1.7685013-3.9511998-3.9433022-3.9511998H12.2666006c-0.5215998,0-0.9358997,0.4029-0.9822998,0.9124 L11.2666006,1.35725V1.45245V55.03405l17.1855011,7.3064003l2.8144989,1.2070999v-3.0951004v-5h6.0566998 c2.3584023,0,3.9433022-2.1767998,3.9433022-4.2099991V40.4524498 C41.2666016,39.8997498,40.8194008,39.4524498,40.2666016,39.4524498z M29.2665997,11.2394505v49.2129974l-15.999999-6.7766991 V4.4524498l15.9906988,6.7728004l0.0093002,0.0038996V11.2394505z"></path> </g> </g></svg>
+                    </div>
+                    </div>
+                    </div>
+
+                  <div class="col-sm-6 col-lg-6">
+                    <div class="single_feature">
+                    <h4>Excellent Everything</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua</p> 
+                    <div class="feature_icon">
+                      <svg class="svg-inline--fa fa-anchor fa-w-18" fill="#000000" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Browser-dependency"> <path d="M60,5h-56C1.7909007,5,0.0000008,6.7908001,0.0000008,9v5v2v39c0,2.2090988,1.7908999,4,3.9999998,4h56 c2.2092133,0,4-1.7909012,4-4V16v-2V9C64,6.7908001,62.2092133,5,60,5z M62,55c0,1.1027985-0.8972015,2-2,2h-56 c-1.1027856,0-1.9999998-0.8972015-1.9999998-2V16h60V55z M62,14h-60V9c0-1.1027999,0.8972142-2,1.9999998-2h56 c1.1027985,0,2,0.8972001,2,2V14z"></path> <path d="M6.0000005,9c-0.9649,0-1.75,0.7849998-1.75,1.75c0,0.9649,0.7851,1.75,1.75,1.75c0.9650002,0,1.75-0.7851,1.75-1.75 C7.7500005,9.7849998,6.9650006,9,6.0000005,9z M6.0000005,11.5c-0.4141998,0-0.75-0.3358002-0.75-0.75s0.3358002-0.75,0.75-0.75 c0.4142146,0,0.75,0.3358002,0.75,0.75S6.4142151,11.5,6.0000005,11.5z"></path> <path d="M16,9c-0.9649,0-1.75,0.7849998-1.75,1.75c0,0.9649,0.7851,1.75,1.75,1.75c0.9650002,0,1.75-0.7851,1.75-1.75 C17.75,9.7849998,16.9650002,9,16,9z M16,11.5c-0.4141998,0-0.75-0.3358002-0.75-0.75S15.5858002,10,16,10 c0.4142151,0,0.75,0.3358002,0.75,0.75S16.4142151,11.5,16,11.5z"></path> <path d="M11.000001,9c-0.9649,0-1.75,0.7849998-1.75,1.75c0,0.9649,0.7851,1.75,1.75,1.75c0.9649992,0,1.75-0.7851,1.75-1.75 C12.750001,9.7849998,11.9650002,9,11.000001,9z M11.000001,11.5c-0.4142008,0-0.75-0.3358002-0.75-0.75s0.3357992-0.75,0.75-0.75 c0.4142141,0,0.75,0.3358002,0.75,0.75S11.4142151,11.5,11.000001,11.5z"></path> <path d="M16,42c0.8458996,0,1.6112995-0.3124008,2.2164001-0.8119011l5.399601,4.7677994 c-0.2266006,0.463501-0.3651009,0.9776001-0.3651009,1.5284004c0,1.9328995,1.5669994,3.5,3.5,3.5s3.5-1.5671005,3.5-3.5 c0-0.9897003-0.4144001-1.8792992-1.0746861-2.5158997l3.2428875-7.0270004C32.6090012,37.9733009,32.8009987,38,33,38 c1.9329987,0,3.5-1.5670013,3.5-3.5c0-0.0649986-0.0155983-0.1255989-0.0191002-0.1898003l7.2966003-3.1271992 C44.3834,31.6856003,45.1512146,32,46,32c1.9329987,0,3.5-1.5669994,3.5-3.5S47.9329987,25,46,25s-3.5,1.5669994-3.5,3.5 c0,0.3453007,0.0654984,0.6721992,0.1585999,0.9873009l-6.8540001,2.9375992C35.1669006,31.5648003,34.1529999,31,33,31 c-1.9330006,0-3.5,1.5670013-3.5,3.5c0,1.0127983,0.4367008,1.9174995,1.1243,2.5565987l-3.2269993,6.9928017 c-0.210001-0.039299-0.4250011-0.0651016-0.6464005-0.0651016c-0.6522007,0-1.2551994,0.1900024-1.7779007,0.5006027 l-5.4817848-4.8404007c-0.0507145-0.0447006-0.112114-0.0644989-0.1684151-0.0972023 C19.4278011,39.2145996,19.5,38.8674011,19.5,38.5c0-1.9329987-1.5669994-3.5-3.5-3.5s-3.499999,1.5670013-3.499999,3.5 S14.0670004,42,16,42z M46,27c0.8270988,0,1.5,0.6728992,1.5,1.5S46.8270988,30,46,30s-1.5-0.6728992-1.5-1.5S45.1729012,27,46,27z M33,33c0.8270988,0,1.5,0.6729012,1.5,1.5S33.8270988,36,33,36s-1.5-0.6729012-1.5-1.5S32.1729012,33,33,33z M26.7509003,45.9842987c0.8271008,0,1.5,0.6729012,1.5,1.5c0,0.8269997-0.6728992,1.5-1.5,1.5s-1.5-0.6730003-1.5-1.5 C25.2509003,46.6571999,25.9237995,45.9842987,26.7509003,45.9842987z M16,37c0.8271008,0,1.5,0.6729012,1.5,1.5 S16.8271008,40,16,40c-0.8270998,0-1.5-0.6729012-1.5-1.5S15.1729002,37,16,37z"></path> </g> </g></svg>
+                    </div>
+                    </div>
+                    </div>
+
+                  <div class="col-sm-6 col-lg-6">
+                    <div class="single_feature">
+                    <h4>Easy to Customize</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua</p> 
+                    <div class="feature_icon">
+                      <svg class="svg-inline--fa fa-anchor fa-w-18"  fill="#000000" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Cogwheel"> <path d="M63.8603745,29.0290489c-0.1474991-1.4941998-1.2881012-2.6953011-2.7705002-2.9209003 c-1.545002-0.2392998-3.7344017-0.5743008-4.8125-0.7392998c-0.5586014-2.0459003-1.3711014-4.0072994-2.4229012-5.8472004 l2.8838005-3.9183998c0.8905983-1.2110004,0.8496017-2.8701-0.1083984-4.0444002 c-1.2764015-1.5258999-2.6884995-2.9345999-4.2031021-4.1904998c-1.1620979-0.9507003-2.8154984-0.9907002-4.0253983-0.1045003 c-1.2598,0.9229002-3.0440025,2.2343998-3.9229012,2.8809004c-1.8408012-1.0513-3.8017006-1.8638-5.847599-2.4229002 l-0.732399-4.8085999c-0.2256012-1.4873-1.4288025-2.6303-2.9365997-2.7817001 c-1.9785004-0.1772-3.9726009-0.1753-5.9355011,0.0073c-1.4932003,0.1509-2.6933994,1.2915-2.9179993,2.7720001 c-0.2382984,1.5443997-0.5732002,3.7329001-0.7382984,4.8109999c-2.0459023,0.5586004-4.007803,1.3716002-5.8486023,2.4229002 l-3.9179974-2.8823004c-1.2109003-0.8925996-2.8719997-0.8505998-4.0429001,0.1079001 c-1.5235004,1.2718997-2.9316998,2.6840997-4.1924,4.2026c-0.9482999,1.1620998-0.9903002,2.8178997-0.1034999,4.0249004 c0.9218001,1.2602997,2.2343001,3.0443993,2.8807998,3.9237995c-1.0516996,1.839901-1.8641996,3.8013-2.4228001,5.8472004 l-4.8105998,0.7329006c-1.4863001,0.2270985-2.6289001,1.4301987-2.7803001,2.9361 c-0.1777,1.9784985-0.1757,3.972599,0.0079,5.9344978c0.1504,1.4932022,1.29,2.6934013,2.7705002,2.9190025 c1.5438998,0.2402,3.7334001,0.5741997,4.8125,0.7392006c0.5586004,2.0468979,1.3711004,4.0077972,2.4228001,5.8476982 l-2.8838,3.9179993c-0.8905997,1.2108994-0.8495998,2.8701019,0.1083999,4.0438995 c1.2743998,1.5244026,2.6866007,2.9336014,4.2032003,4.1914024c1.1630001,0.9482002,2.8172998,0.9911995,4.0253,0.1035004 c1.2598-0.9219017,3.0439968-2.2344017,3.9228973-2.8808022c1.8407993,1.0517006,3.8027,1.8642006,5.8477001,2.422802 l0.732399,4.8106003c0.2265034,1.4862976,1.4297009,2.6288986,2.935503,2.7801971 c0.9765968,0.0879021,1.9560966,0.1319008,2.9335976,0.1319008c1.0049,0,2.0077991-0.0468979,3.0010014-0.139698 c1.4940987-0.1473999,2.6952972-1.2881012,2.919899-2.7705002c0.2402-1.5439034,0.5741997-3.7334023,0.7392998-4.8125 c2.044899-0.5586014,4.0067978-1.3711014,5.8466988-2.422802l3.9188995,2.8837013 c1.2119026,0.892601,2.8711014,0.8486977,4.0438995-0.1082993c1.5245018-1.2745018,2.9336014-2.6865997,4.1905022-4.2022018 c0.9502029-1.1610985,0.9930992-2.8173981,0.1044998-4.0264015c-0.9219017-1.259697-2.2344017-3.0438995-2.8809013-3.9227982 c1.0517998-1.839901,1.8642998-3.8008003,2.4229012-5.8476982l4.8094978-0.7324028 c1.4864006-0.2255974,2.6299019-1.4286995,2.7813034-2.9354973C64.0458755,32.9821472,64.0439758,30.9879494,63.8603745,29.0290489 z M61.8769722,34.7731476c-0.0585976,0.5869026-0.5068932,1.0596008-1.0908966,1.1483994l-5.4619026,0.8311005 c-0.4003983,0.0605011-0.7245979,0.3574028-0.8213005,0.7509995c-0.5625,2.3017006-1.4706993,4.4941025-2.6991997,6.5156021 c-0.2108994,0.3466988-0.1913986,0.7860985,0.0489006,1.1123009c0,0,2.0018997,2.7206993,3.270504,4.452198 c0.3475952,0.4746017,0.3320007,1.1230011-0.035202,1.5712013c-1.1757965,1.4179993-2.4980011,2.7431984-3.9219017,3.9327011 c-0.4570007,0.3710976-1.107399,0.3905983-1.5839996,0.0389977l-4.4501991-3.2743988 c-0.3260994-0.2402-0.7656021-0.2607002-1.1123009-0.0488014c-2.0223961,1.2285004-4.214798,2.1366997-6.5155983,2.6991997 c-0.3935013,0.0967026-0.690403,0.4209023-0.7510033,0.8213005c0,0-0.5077934,3.3379021-0.8377953,5.4618988 c-0.0889015,0.5811005-0.5577011,1.0264015-1.1348038,1.0830002c-1.8311005,0.1719017-3.7030983,0.1748009-5.5536995,0.0078011 c-0.5868988-0.0585976-1.0585995-0.5078011-1.1484966-1.089798l-0.8309994-5.4639015 c-0.0606041-0.3993988-0.3574028-0.7235985-0.7510014-0.8203011c-2.3008022-0.5625-4.4932022-1.4706993-6.5156021-2.6991997 c-0.1602001-0.0976982-0.3398991-0.1455002-0.5194988-0.1455002c-0.2090015,0-0.4170017,0.0653992-0.5928001,0.1943016 c0,0-2.7206974,2.0019989-4.452198,3.2705002c-0.4726,0.3446999-1.1219997,0.3320007-1.5713005-0.035099 c-1.4179001-1.1758003-2.7430992-2.4981003-3.9326-3.9219017c-0.3729992-0.4570007-0.3895998-1.1083984-0.0389996-1.5839996 l3.2743998-4.4501991c0.2402-0.3262024,0.2596998-0.7656021,0.0488005-1.1123009 c-1.2285004-2.0214996-2.1367006-4.2139015-2.6992006-6.5156021c-0.0966997-0.3935966-0.4208994-0.6904984-0.8212996-0.7509995 c0,0-3.3379002-0.5077972-5.4618998-0.8378983c-0.5791001-0.0889015-1.0254002-0.5586014-1.0830002-1.1348 c-0.1718999-1.8339005-0.1738999-3.7055016-0.0077999-5.5527c0.0585999-0.5869007,0.5077999-1.0596008,1.0908-1.1484013 l5.4628992-0.8320999c0.3994007-0.0614986,0.7236004-0.3578987,0.8203001-0.7514 c0.5625-2.3008003,1.4707003-4.4926987,2.6992006-6.5156994c0.2108994-0.3460999,0.1913996-0.7851009-0.0488005-1.1117992 c0,0-2.0019999-2.7202015-3.2705002-4.4531012c-0.3476992-0.4730997-0.3310995-1.1220999,0.0351-1.5707998 c1.1778002-1.4188995,2.5-2.7440996,3.9219007-3.9315996c0.4560995-0.3731003,1.1073999-0.3916006,1.5839996-0.0391006 l4.4501982,3.2734003c0.3270988,0.2407999,0.7656002,0.2598,1.112299,0.0494003 c2.0223999-1.2286005,4.2147999-2.1367998,6.5156021-2.7002001c0.3935986-0.0962,0.6903973-0.4200001,0.7510014-0.8204002 c0,0,0.509697-3.3378,0.8378963-5.4618998c0.0879002-0.5795999,0.5576-1.0258,1.1347008-1.0839 c1.8359985-0.1704999,3.7079983-0.1718999,5.5538006-0.0068998c0.5868988,0.0585999,1.0594978,0.5072999,1.1483994,1.0913 l0.8309975,5.4610004c0.0606003,0.4004002,0.357502,0.7245998,0.7510033,0.8207998 c2.3008003,0.5634003,4.4932022,1.4715996,6.5155983,2.7002001c0.347702,0.2108994,0.7862015,0.1913996,1.1123009-0.0494003 c0,0,2.7207985-2.0018997,4.4511986-3.2694998c0.4756012-0.3486004,1.1231041-0.3330002,1.5723,0.0346994 c1.4160004,1.1743002,2.7411995,2.4966002,3.9315987,3.9204006c0.3741035,0.4580002,0.3907013,1.1098995,0.0401001,1.5853996 l-3.2743988,4.450201c-0.2402992,0.3266983-0.2598,0.7656994-0.0489006,1.1117992 c1.2285004,2.0230007,2.1366997,4.2148991,2.6991997,6.5156994c0.0967026,0.3935013,0.4209023,0.6899014,0.8204002,0.7514 c0.0009003,0,3.3388062,0.5093002,5.4628029,0.8383999c0.5810966,0.0883999,1.0263977,0.5571003,1.0830994,1.1353016 C62.0409737,31.052948,62.0429726,32.9245491,61.8769722,34.7731476z"></path> <path d="M31.9999752,21.9997482c-5.5137005,0-10,4.4857998-10,10c0,5.5135994,4.4862995,10,10,10s9.9999981-4.4864006,9.9999981-10 C41.9999733,26.485548,37.5136757,21.9997482,31.9999752,21.9997482z M31.9999752,39.9997482c-4.4111004,0-8-3.5889015-8-8 c0-4.4111996,3.5888996-8,8-8s7.9999981,3.5888004,7.9999981,8C39.9999733,36.4108467,36.4110756,39.9997482,31.9999752,39.9997482 z"></path> <path d="M25.9911747,16.8693485c-0.0722008-0.5473995-0.5615005-0.9355001-1.1219997-0.8607998 c-0.075201,0.0096989-7.5694008,1.0844002-8.8554974,8.8270988c-0.0908003,0.5449009,0.2772999,1.0601006,0.8223,1.1504002 c0.0555992,0.0093002,0.1103001,0.0137005,0.164999,0.0137005c0.4804974,0,0.9042988-0.3466988,0.9852982-0.8360004 c1.0401001-6.2587986,6.8985004-7.1385994,7.1474991-7.1728001C25.6796741,17.9171486,26.0634747,17.4157486,25.9911747,16.8693485 z"></path> </g> </g></svg>
+                    </div>
+                    </div>
+                    </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="slider_section" id="app-screenshots">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-7 col-md-8">
+             <div class="section_heading text-center">
+              <h2>App screenshots</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Consequatur omnis asperiores doloribus nobis.
+              </p>
+             </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="swiper mySwiper w-100 my-4">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="/assets/images/ss1.jpg"></div>
+          <div class="swiper-slide"><img src="/assets/images/ss2.jpg"></div>
+          <div class="swiper-slide"><img src="/assets/images/ss3.jpg"></div>
+          <div class="swiper-slide"><img src="/assets/images/ss4.jpg"></div>
+          <div class="swiper-slide"><img src="/assets/images/ss5.jpg"></div>
+          <div class="swiper-slide"><img src="/assets/images/ss6.jpg"></div>
+          <div class="swiper-slide"><img src="/assets/images/ss7.jpg"></div>
+          <div class="swiper-slide"><img src="/assets/images/ss4.jpg"></div>
+          <div class="swiper-slide"><img src="/assets/images/ss6.jpg"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+
+<section id="pricing" class="">
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <div class="section_heading text-center">
+        <h2>Approdabele package</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut a nihil possimus voluptatem!</p>
+      </div>
+       </div>
+  </div>
+  <div class="row mobile_px_20 my-5">
+
+
+    <div class="col-md-6 col-lg-3 my-3">
+      <div class="single_price">
+        <div class="month">
+          Month
+        </div>
+        <h5>premium</h5>
+        <div class="icon_pad">
+          <div class="icon_circle">
+            <span class="fa-brands fa-padlet"></span>
+          </div>
+        </div>
+        <div class="doler">
+          <h2>
+            <span class="doler-sine">$</span>35
+          </h2>
+        </div>
+        <ul>
+          <br>
+          <li>5Gb Linux Web Space</li>
+          <li>5 MYSQL Databases</li>
+          <li>24/7 Tech Support</li>
+          <li>Daily Backup</li>
+        </ul>
+        <a href="#" class="btn btn-bordered mt-4">Learn More</a>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3 my-3">
+      <div class="single_price">
+        <div class="month">
+          Month
+        </div>
+        <h5>Basic</h5>
+        <div class="icon_pad">
+          <div class="icon_circle">
+            <span class="fa-regular fa-handshake"></span>
+          </div>
+        </div>
+        <div class="doler">
+          <h2>
+            <span class="doler-sine">$</span>30
+          </h2>
+        </div>
+        <ul>
+          <br>
+          <li>3Gb Linux Web Space</li>
+          <li>3 MYSQL Databases</li>
+          <li>24/7 Tech Support</li>
+          <li>Daily Backup</li>
+        </ul>
+        <a href="#" class="btn btn-bordered mt-4">Learn More</a>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3 my-3">
+      <div class="single_price active_price">
+        <div class="month">
+          Month
+        </div>
+        <h5>Addict</h5>
+        <div class="icon_pad">
+          <div class="icon_circle">
+            <span class="fa-solid fa-wand-magic-sparkles"></span>
+          </div>
+        </div>
+        <div class="doler">
+          <h2>
+            <span class="doler-sine">$</span>50
+          </h2>
+        </div>
+        <ul>
+          <br>
+          <li>70Gb Linux Web Space</li>
+          <li>7 MYSQL Databases</li>
+          <li>24/7 Tech Support</li>
+          <li>Daily Backup</li>
+        </ul>
+        <a href="#" class="btn btn-bordered mt-4">Learn More</a>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3 my-3">
+      <div class="single_price">
+        <div class="month">
+          Month
+        </div>
+        <h5>Business</h5>
+        <div class="icon_pad">
+          <div class="icon_circle">
+            <span class="fa-solid fa-business-time"></span>
+          </div>
+        </div>
+        <div class="doler">
+          <h2>
+            <span class="doler-sine">$</span>85
+          </h2>
+        </div>
+        <ul>
+          <br>
+          <li>100Gb Linux Web Space</li>
+          <li>10 MYSQL Databases</li>
+          <li>24/7 Tech Support</li>
+          <li>Daily Backup</li>
+        </ul>
+        <a href="#" class="btn btn-bordered mt-4">Learn More</a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<section id="contact" >
+  <div class="contact ptb_100">
+    <div class="container">
+      <div class="mb-5 text-center">
+        <h5>Lets start a Conversation</h5>
+        <h2 class="fw-bold">Contact Us</h2>
+      </div>
+    </div>
+
+    <div class="mobile_px_20">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-5">
+            <h4 class="fw-bold">Contact Info</h4>
+            <ul class="info list-unstyled">
+            <li class="d-flex align-items-center">
+              <span class="pe-3 fa-solid fa-map-location-dot fs-5"></span>
+              <p><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></p>
+            </li>
+            <li class="d-flex align-items-center">
+              <span class="pe-3 fa-solid fa-address-book fs-5"></span>
+              <p><a href="#">+91 8102224005</a></p>
+            </li>
+            <li class="d-flex align-items-center">
+              <span class="pe-3 fa-solid fa-envelope fs-5"></span>
+              <p><a href="#">Deepaksingh101101@gmail.com</a></p>
+            </li>
+          </ul>
+          </div>
+          <div class="col-lg-7 col-md-7 pt-lg-0 pt-md-0 pt-4">
+            <form>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="" placeholder="NAME">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="email" class="form-control" name="" placeholder="Email Address">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <textarea  class="textarea my-3" name="" placeholder="Your concern" rows="4" cols="30"></textarea>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <button class="btn"><span class=" fs-5"></span>Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="p-3 copyright">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-lg-6 p-3 text-center text-lg-start mob-pb-0">
+          <p class="my-0">Copyright @ 2023 <a href="#">Oneshot </a>All Right Reserved</p>
+        </div>
+        <div class="col-12 col-lg-6 p-3 text-center text-lg-end mob-pb-0">
+          <p class="">Designed by <a href="#" target="_blank">Deepak Singh</a></p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<div id="scrollUp" title="Scroll To Top">
+<a href="#home"><span class="fa-solid fa-arrow-up fs-4 text-white"></span></a>
+</div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      autoplay:true,
+      loop:true,
+      autoplaySpeed:3000,
+      
+      centeredSlides: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+  </body>
+</html>
